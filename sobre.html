@@ -273,10 +273,10 @@
     color: #B19CD9;
   }
 }
-
 a {
-  color: inherit; /* herda a cor do texto ao redor */
-  text-decoration: none; /* remove o sublinhado */
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; /* <<< ESSENCIAL PARA CELULAR */
 }
 
 a:visited {
@@ -285,10 +285,10 @@ a:visited {
 
 a:focus,
 a:active {
-  outline: none; /* remove a borda azul quando clicado ou focado */
+  outline: none;
 }
 
- a:focus {
+a:focus {
   outline: 2px dashed #B19CD9;
   outline-offset: 4px;
 }
