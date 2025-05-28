@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blog-livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header"><!--INICIO DO MENU-->
+   <div class="logo-menu"><img src="branco.svg" class="logo-hero"></div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="index1.html">Início</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <!--<li><a href="#livros">Livros</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#resenhas">Resenhas de livros</a></li>
+        <li><a href="#compras">Sites para compras</a></li>-->
+      </ul>
+    </nav>
+  </header><!--FIM DO MENU -->
+
+<!--CONTEUDO DO SITE-->
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+      <!--<img src="minha foto.jpg" alt="Minha foto" class="hero-img">-->
+      <div class="hero-text">
+        <h1>Bem-vinda ao <br><span class="destaque"> Versos & Encontros!</span><br><br>
+            
+            <!--<strong>Você ama livros? Eu também!</strong></h1>-->
+        <p>Este é o Versos & Econtros, um espaço criado especialmente para leitores apaixonados por boas histórias, ideias provocadoras e descobertas literárias.<br><br>
+        Aqui você encontra resenhas sinceras, análises aprofundadas e recomendações de leitura para todos os gostos da ficção ao ensaio, do clássico ao contemporâneo.<br>  
+        Nosso objetivo é te ajudar a escolher sua próxima leitura com confiança e inspiração.<br><br> Cada resenha é pensada para ir além do resumo:<br>
+        discutimos estilo, enredo, personagens, temas centrais e, claro, o impacto que a obra pode ter sobre você, leitor.<br>
+
+        Seja você um leitor voraz ou alguém em busca de um bom livro para começar, este é o seu lugar.<br><br>
+         Explore, comente, compartilhe e, acima de tudo, leia!</p>
+      </div>
+    </div>
+  </section><!--FIM CONTEUDO DO SITE-->
+
+  
+  <!--frufru do menu--> <script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script> <!--fim do frufru -->
+
+  <!--INICIO RODAPE-FOOTER-->
+
+  <footer style="background-color: #B19CD9; color: #4B3B6B; padding: 2rem 1rem;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-direction: column; align-items: center; text-align: center;">
+   <!---<h2 style="margin: 0; font-size: 1.5rem;">amores & livros</h2>
+    <p style="margin: 0.5rem 0;">Criado por Alexsandra Beatriz</p>-->
+    <p>&copy; 2025 Alexsandra - Todos os direitos reservados</p>
+    <div style="margin-top: 1rem;">
+      <!--<a href="https://instagram.com/seuusuario" target="_blank" style="text-decoration: none; color: inherit;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 30px; height: 30px;">
+      </a>-->
+    </div>
+  </div>
+</footer> <!--FIM DO RODAPE-FOOTER-->
+
+
+<!--ESTILO DO MEU MENU-->
+  <style>
+        body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F2E8FF;
+}
+
+.header {
+ 
+  background-color: #B19CD9;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-hero {
+  height: 8rem;
+  width: auto;
+}
+.menu-toggle {
+  margin-right: 2rem;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+.menu {
+  position: absolute;
+   margin-left: 0.20rem;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #B19CD9;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.menu a:hover {
+    background-color: rgba(253, 253, 253, 0.746);
+    color: #B19CD9; /* Ou outra cor que quiser */
+    transition: all 0.3s ease;
+}
+
+ .menu a {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+
+.menu.active {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+
+
+.menu ul li a {
+  
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}/*<<FIM DO ESTILO DO MEU MENU*/
+
+/*ESTILO DO CONTEUDO*/
+.hero {
+  background-color: #F2E8FF;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #B19CD9;
+}
+
+.hero-text .destaque {
+  font-family: cursive;
+  font-weight: normal;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.botao {
+  background-color: #B19CD9;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}/*FIM DO ESTILO DO CONTEUDO*/
+
+
+/*INICIO DO ESTILO DO MEU FOOTER/RODAPE*/
+      footer {
+    font-family: 'Arial', sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    footer div {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+    footer div > * {
+      flex: 1;
+    }
+  }
+
+  footer img:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }/*<< FIM DO ESTILO DO MEU FOOTER/RODAPE*/
+
+ @media (min-width: 1024px) {
+  .menu-toggle {
+    display: none; /* Esconde o botão hamburguer */
+  }
+
+  .menu {
+    position: static;
+    display: flex !important;
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu ul li {
+    margin: 0; /* Remove margem extra */
+    padding: 0; /* Remove padding extra */
+    border-bottom: none;
+  }
+
+  .menu ul li a {
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .menu ul li a:hover {
+    background-color: white;
+    color: #B19CD9;
+  }
+}
+
+  </style>
+
