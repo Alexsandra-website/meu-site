@@ -1,4 +1,9 @@
-
+body, * {
+  -webkit-user-select: none; /* Safari/Chrome (mobile) */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Padrão */
+}
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
