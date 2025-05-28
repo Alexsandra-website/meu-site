@@ -1,4 +1,18 @@
- body {
+ a {
+  color: inherit; /* herda a cor do texto ao redor */
+  text-decoration: none; /* remove o sublinhado */
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none; /* remove a borda azul quando clicado ou focado */
+}
+
+body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #F2E8FF;
